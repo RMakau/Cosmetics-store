@@ -1,0 +1,138 @@
+.section-p1{
+    padding: 40px 80px;
+   
+
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+
+#header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding: 10px 20px;
+    background:black;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+    z-index:999;
+    position:sticky;
+    top:0;
+    left:0;
+    
+}
+#navbar{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+}
+#navbar li{
+    list-style:none;
+    padding:0 20px;
+    position:relative;
+ 
+}
+#navbar li a{
+    text-decoration:none;
+    font-size: 16px;
+    font-weight:bold;
+    color:yellow;
+    transition: 0.3s ease;
+    
+
+}
+#navbar li a:hover,
+#navbar li a.active{
+    color: blueviolet;
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: ;
+    width: 30%;
+    height: 20px;
+    background: rgb(102, 4, 4);
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+#hero {
+    background-image: url("feature.png");
+    height: 100vh;
+    width:100%;
+    background-size:cover;
+    background-position: top 40% right 0;
+    padding: 0 40px;
+    display:flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content:center;
+}
+#hero h4{
+    padding: 15px;
+    color: yellow;
+    font-size: x-large;
+}
+#hero h2{
+    padding:15px;
+    color: yellow;
+    font-size: x-large;
+}
+#hero h1{
+    color:yellow;
+    padding:15;
+    font-size: x-large;
+}
+#hero p{
+    padding: 15px;
+    color: yellow;
+    font-size: x-large;
+    font-weight: 700;
+}
+#hero button{
+    background-image: url("button.png");
+    background-color:rgb(120, 187, 44);
+    border-radius: 2cm;
+    padding: 14px 80px 14px 65px;
+    font-size: x-large;
+    background-repeat: no-repeat;
+    cursor:pointer;
+    font-weight:700;
+    font-size:15px;
+}
+#feature{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+#feature .fe-box{
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    padding: 1px 20px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.3s);
+    border: 1px solid violet;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+
+#feature .fe-box:hover{
+    box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+}
+#feature .fe-box img{
+    width:100%;
+    margin-bottom:10px;
+}
+#feature .fe-box h6{
+    padding: 9px 8px 6px 8px;
+    line-height:1;
+    border-radius: 4px;
+    color: aquamarine;
+    background-color: blueviolet;
+    display: inline-block;
+}
